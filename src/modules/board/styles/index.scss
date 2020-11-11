@@ -1,0 +1,139 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/common.scss';
+
+.board-container {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: $backgroundColor;
+    @include media-tab{
+        background-color: $textColor;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: $headerHeight;
+        font-size: 20px;
+        @include media-tab{
+            font-size: 30px;
+            height: $headerHeight + 10;
+            background-color: $boxColor-dark;
+            color: $textColor;
+        }
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        @include media-tab {
+            flex-direction: column-reverse;
+          }
+        .button-container{
+            @include media-tab {
+                padding: 10px 0px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+              }
+            .button{
+                margin: 10px 20px;
+                @include media-tab {
+                    padding: 20px 10px;
+                    font-size: 24px;
+                    width: 150px;
+                   
+                  }
+                background-color: $buttonColor;
+                border: none;
+                color: $textColor;
+                font-size: 18px;
+                padding: 10px 30px;
+                border-radius: 4px;
+                cursor: pointer;
+                outline: none;
+            }
+            .button:hover{
+                @extend .button;
+                background-color: rgba($color: $buttonColor, $alpha: 0.8);
+            }
+        }
+        .board{
+            width: 50%;
+            @include media-tab {
+                width: 100%;
+              }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .box-container{
+                width: 28%;
+                height: 170px;
+                position: relative;
+               
+                @include media-tab {
+                    width: 90%;
+                    height: 90px;
+                    margin: 6px 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $boxColor-grey;
+                }
+                .left-bar{
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 0px 4px 1px rgba($color: $boxColor-dark, $alpha: 0.2);
+                    @include media-tab{
+                        display: block;
+                        width: 20px;
+                        left: 0px;
+                        border: none;
+                        label{
+                            display: none;
+                        }
+                    }
+                
+                    font-size: 42px;
+                    color: $textColor;
+                }
+                .board-box{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #cccccc;
+                    @include media-tab{
+                        border: none;
+                        margin: 10px 0px;
+                        background-color: rgba(230, 230, 230, 1);
+                    }
+                    font-size: 30px;
+                    font-weight: bold;
+                    
+                }
+        }
+        }
+    }
+    .bottom-container{
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+        label{
+            @include media-tab {
+            font-size: 20px;
+            }
+        }
+    }
+}
