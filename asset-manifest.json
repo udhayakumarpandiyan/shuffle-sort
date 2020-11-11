@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shuffle-sort/static/css/main.eb47df17.chunk.css",
+    "main.js": "/shuffle-sort/static/js/main.71c2bd4f.chunk.js",
+    "main.js.map": "/shuffle-sort/static/js/main.71c2bd4f.chunk.js.map",
+    "runtime~main.js": "/shuffle-sort/static/js/runtime~main.9da5a39e.js",
+    "runtime~main.js.map": "/shuffle-sort/static/js/runtime~main.9da5a39e.js.map",
+    "static/js/2.2248bb3c.chunk.js": "/shuffle-sort/static/js/2.2248bb3c.chunk.js",
+    "static/js/2.2248bb3c.chunk.js.map": "/shuffle-sort/static/js/2.2248bb3c.chunk.js.map",
+    "index.html": "/shuffle-sort/index.html",
+    "precache-manifest.534f337ad8759c2959f7ec264f7fa0eb.js": "/shuffle-sort/precache-manifest.534f337ad8759c2959f7ec264f7fa0eb.js",
+    "service-worker.js": "/shuffle-sort/service-worker.js",
+    "static/css/main.eb47df17.chunk.css.map": "/shuffle-sort/static/css/main.eb47df17.chunk.css.map"
+  }
+}
